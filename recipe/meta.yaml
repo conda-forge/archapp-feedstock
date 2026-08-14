@@ -1,5 +1,5 @@
 {% set name = "archapp" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/pcdshub/archapp/archive/v{{ version }}.tar.gz
-  sha256: 77fb002072a77b23388ba1634710c95046f31adaffed2c3635a177fdd152c353
+  sha256: 7a0c66c66919221023c312067b7963b652c641d9e601092cdacc319f0096adac
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
